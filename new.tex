@@ -120,23 +120,33 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%---------- CONSTANTS ----------
+
+\def\myName{Ajaz Ur Rehman}
+\def\myTitle{Software Engineer}
+\def\myEmail{ajazurrehman4@gmail.com}
+\def\myLinkedIn{https://linkedin.com/in/ajaz-ur-rehman}
+\def\myGitHub{https://github.com/ajaz-ur-rehman}
+\def\myPortfolio{https://ajaz-ur-rehman.github.io}
+\def\myHometown{Bhopal, India}
+\def\myHometownLocation{https://www.google.com/maps/place/Bhopal,+Madhya+Pradesh/@23.1996395,77.2410777,11z/data=!3m1!4b1!4m6!3m5!1s0x397c428f8fd68fbd:0x2155716d572d4f8!8m2!3d23.2599333!4d77.412615!16zL20vMGN3NTE?entry=ttu}
 
 \begin{document}
 
 %---------- HEADING ----------
 
 \begin{center}
-    \textbf{\Huge \scshape Ajaz Ur Rehman} \\ \vspace{3pt}
+    \textbf{\Huge \scshape \myName} \\ \vspace{3pt}
     \small
-    \faAt \hspace{.5pt} \href{mailto:ajazurrehman4@gmail.com}{Email}
+    \faAt \hspace{.5pt} \href{mailto:\myEmail}{Email}
     $|$
-    \faLinkedinSquare \hspace{.5pt} \href{https://linkedin.com/in/ajaz-ur-rehman}{LinkedIn}
+    \faLinkedinSquare \hspace{.5pt} \href{\myLinkedIn}{LinkedIn}
     $|$
-    \faGithub \hspace{.5pt} \href{https://github.com/ajaz-ur-rehman}{GitHub}
+    \faGithub \hspace{.5pt} \href{\myGitHub}{GitHub}
     $|$
-    \faGlobe \hspace{.5pt} \href{https://ajaz-ur-rehman.github.io}{Portfolio}
+    \faGlobe \hspace{.5pt} \href{\myPortfolio}{Portfolio}
     $|$
-    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Bhopal,+Madhya+Pradesh/@23.1996395,77.2410777,11z/data=!3m1!4b1!4m6!3m5!1s0x397c428f8fd68fbd:0x2155716d572d4f8!8m2!3d23.2599333!4d77.412615!16zL20vMGN3NTE?entry=ttu}{Bhopal, India}
+    \faMapMarker \hspace{.5pt} \href{\myHometownLocation}{\myHometown}
 \end{center}
 
 
@@ -149,7 +159,7 @@
     
     \resumeSubheading
       {IES College of Technology
-      }{Bhopal, India}
+      }{\myHometown}
       {B.E. in Computer Science and Engineering;   \textbf{CGPA: 6.39/10}}{Aug 2013 \textbf{--} May 2017}
     
   \resumeSubHeadingListEnd
@@ -181,7 +191,7 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Avikon}{Istanbul, Turkey}
+      {Adsum Works}{London, UK}
       {Software Engineer}{Dec 2023 \textbf{--} Present, Full-time}
         \resumeItemListStart
             \resumeItem{Designed a Qt-based chat application utilizing TCP for real-time communication within a client-server architecture, demonstrating expertise in socket programming, data serialization, and message routing.}
@@ -191,7 +201,7 @@
         \resumeItemListEnd
 
     \resumeSubheading
-      {SemperTech}{Istanbul, Turkey}
+      {SemperTech}{London, UK}
       {Software Engineer}{Sep 2023 \textbf{--} Dec 2023, Full-time}
         \resumeItemListStart
             \resumeItem{Worked on the “Arçelik Digital Home Energy” project in a collaborative effort with DAI-Labor at the Technical University of Berlin under the supervision of \href{https://www.linkedin.com/in/prof-dr-dr-h-c-sahin-albayrak-65452a1/}{\color{blue}Prof. Dr. Şahin Albayrak}.}
@@ -199,14 +209,14 @@
             \resumeItem{Implemented the TLS protocol for secure data exchange using the X.509 standard and integrated multicast DNS for seamless communication to complement the development of SHIP and SPINE protocols.}
         \resumeItemListEnd
 
-    % \resumeSubheading
-      % {Scale AI}{San Francisco, California, United States (Remote)}
-      % {Prompt Engineer}{Mar 2023 \textbf{--} Sep 2023, Freelance}
-        % \resumeItemListStart
-            % \resumeItem{Crafted elaborate Turkish prompts for various generative AI tasks. Tailored prompts using well-defined formats such as natural language questions and structured inputs based on the task's domain to fine-tune the LLM, improving the chatbot's responses and enhancing overall performance.}
-            % \resumeItem{Provided user feedback by reviewing and scoring the chatbot's responses to ensure they align with intended chatbot behaviors and the chatbot produces accurate and contextually appropriate responses to given prompts.}
-            % \resumeItem{Engaged in collaborative meetings with cross-functional teams and project coordinators, actively seeking guidance, addressing queries, and collectively brainstorming strategies to generate higher-quality prompts.}
-        % \resumeItemListEnd
+    \resumeSubheading
+      {Scale AI}{San Francisco, California, United States (Remote)}
+      {Prompt Engineer}{Mar 2023 \textbf{--} Sep 2023, Freelance}
+        \resumeItemListStart
+            \resumeItem{Crafted elaborate Turkish prompts for various generative AI tasks. Tailored prompts using well-defined formats such as natural language questions and structured inputs based on the task's domain to fine-tune the LLM, improving the chatbot's responses and enhancing overall performance.}
+            \resumeItem{Provided user feedback by reviewing and scoring the chatbot's responses to ensure they align with intended chatbot behaviors and the chatbot produces accurate and contextually appropriate responses to given prompts.}
+            \resumeItem{Engaged in collaborative meetings with cross-functional teams and project coordinators, actively seeking guidance, addressing queries, and collectively brainstorming strategies to generate higher-quality prompts.}
+        \resumeItemListEnd
 
     \resumeSubheading
       {Max Planck Institute for Intelligent Systems}{Stuttgart, Baden\textbf{-}Württemberg, Germany}
@@ -218,17 +228,16 @@
             % \resumeItem{Designed the project's system and software architecture, flowchart, and state machine diagram. Expanded G-code capabilities by incorporating spherical coordinates to specify the direction of magnetization for shape morphing.}
         \resumeItemListEnd
     
-    % \resumeSubheading
-      % {Nanonetworking Research Group, Boğaziçi University}{Istanbul, Turkey}
-      % {Undergraduate Researcher}{Oct 2021 \textbf{--} Jun 2022, Part-time}
-        % \resumeItemListStart
-            % \resumeItem{Worked on the “Design and Implementation of Molecular Communication Systems Using Index Modulation” project under the supervision of \href{https://www.linkedin.com/in/alipusane/}{\color{blue}Prof. Dr. Ali Emre Pusane}.}
-            % \resumeItem{Simulated the Brownian motion of molecules in a SISO MCvD system and predicted simulation parameters such as receiver radius, diffusion coefficient, and transmitter-receiver distance using CNNs with Keras and TensorFlow.}
-            % \resumeItem{Plotted the arrival of molecules per symbol duration in a SISO MCvD system using Binomial, Poisson, and Gaussian model approximations with MATLAB.}
-            % \resumeItem{Ran Monte Carlo simulations of the Gaussian model to encode and decode randomized binary sequences in a SISO MCvD system using BCSK modulation technique and calculated the bit error rate on Z-channel.}
-        % \resumeItemListEnd
+    \resumeSubheading
+      {Nanonetworking Research Group, Boğaziçi University}{Istanbul, Turkey}
+      {Undergraduate Researcher}{Oct 2021 \textbf{--} Jun 2022, Part-time}
+        \resumeItemListStart
+            \resumeItem{Worked on the “Design and Implementation of Molecular Communication Systems Using Index Modulation” project under the supervision of \href{https://www.linkedin.com/in/alipusane/}{\color{blue}Prof. Dr. Ali Emre Pusane}.}
+            \resumeItem{Simulated the Brownian motion of molecules in a SISO MCvD system and predicted simulation parameters such as receiver radius, diffusion coefficient, and transmitter-receiver distance using CNNs with Keras and TensorFlow.}
+            \resumeItem{Plotted the arrival of molecules per symbol duration in a SISO MCvD system using Binomial, Poisson, and Gaussian model approximations with MATLAB.}
+            \resumeItem{Ran Monte Carlo simulations of the Gaussian model to encode and decode randomized binary sequences in a SISO MCvD system using BCSK modulation technique and calculated the bit error rate on Z-channel.}
+        \resumeItemListEnd
 
-    % \vspace{20pt}
     \resumeSubheading
       {SESTEK Speech Enabled Software Technologies}{Istanbul, Turkey}
       {AI Research and Development Intern}{Jan 2022 \textbf{--} Feb 2022, Internship}
@@ -238,14 +247,14 @@
             \resumeItem{Worked on a Turkish open-domain QA system made by fine-tuning BERTurk and XLM-Roberta models. Tabularized exact match and F1 scores derived from DeepMind's XQuAD and various Turkish data sets.}
         \resumeItemListEnd
 
-    % \resumeSubheading
-      % {Meteksan Defense Industry Inc.}{Ankara, Turkey}
-      % {Analog Design Engineering Intern}{Jul 2021 \textbf{--} Aug 2021, Internship}
-        % \resumeItemListStart
-            % \resumeItem{Designed and simulated numerous analog circuits such as voltage-mode controlled buck converter, phase-shifted full-bridge isolated DC-DC converter, and EMI filters with LTspice. Integrated these circuits and implemented a 320 W power distribution unit to be used in a radar system's power circuit board.}
-            % \resumeItem{Researched real-world compatible electronic components to be used in such circuits including GaNFETs, high-side gate drivers, and Schottky diodes.}
-            % \resumeItem{Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut-off frequencies.}
-        % \resumeItemListEnd
+    \resumeSubheading
+      {Rainbow Western}{Bhopal, India}
+      {Analog Design Engineering Intern}{Jul 2021 \textbf{--} Aug 2021, Internship}
+        \resumeItemListStart
+            \resumeItem{Designed and simulated numerous analog circuits such as voltage-mode controlled buck converter, phase-shifted full-bridge isolated DC-DC converter, and EMI filters with LTspice. Integrated these circuits and implemented a 320 W power distribution unit to be used in a radar system's power circuit board.}
+            \resumeItem{Researched real-world compatible electronic components to be used in such circuits including GaNFETs, high-side gate drivers, and Schottky diodes.}
+            \resumeItem{Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut-off frequencies.}
+        \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 
