@@ -66,19 +66,18 @@
   }
 }
 
+\newcommand{\resumeMainHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \small #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-
-\newcommand{\resumeProjectHeading}[2]{
-    \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -196,20 +195,20 @@
 \vspace{3pt}
 \resumeSubHeadingListStart
 
-\resumeProjectHeading
-{\textbf{ImgAlly} $|$ \emph{\href{https://imgally.com}{\color{blue}Website}}}{}
+\resumeMainHeading
+{ImgAlly}{Mar 2024 \textbf{--} May 2024}
 \resumeItemListStart
 \resumeItem{ImgAlly is an AI-based image editing tool that allows users to upload and edit images. It uses an AI model API by HuggingFace and features a user-friendly interface. The tool is deployed on AWS and utilizes a serverless architecture.}
 \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{AutomateMyApp} $|$ \emph{\href{https://automatemyapp.com}{\color{blue}Website}}}{}
+\resumeMainHeading
+{AutomateMyApp}{Jan 2021 \textbf{--} Sep 2021}
 \resumeItemListStart
 \resumeItem{AutomateMyApp is a workflow automation tool that allows users to create custom workflows using a drag-and-drop interface. It supports many popular services like Gmail, Google Sheets, Calendly, and Discord. The tool uses OAuth 2.0 for app authorization and webhooks for efficient trigger handling.}
 \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{Clearalist} $|$ \emph{\href{https://clearalist.com}{\color{blue}Website}}}{}
+\resumeMainHeading
+{Clearalist}{Jan 2020 \textbf{--} Dec 2020}
 \resumeItemListStart
 \resumeItem{Clearalist is an Email List cleaning service that allows users to upload their email lists and get them verified. This app has served over 1,000 customers and processed over 5 million emails. It uses Telnet and SMTP protocols to verify emails and has a 90\% accuracy rate.}
 \resumeItemListEnd
