@@ -61,28 +61,26 @@
 % Custom commands
 
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{#1}\vspace{-2pt}
 }
 
 \newcommand{\resumeMainHeading}[2]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \small #2 \\
+      \textbf{#1} & \small{#2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \small #2 \\
-      \textit{\small #3} & \textit{\small #4} \\
+      \textbf{#1} & \small{#2} \\
+      \textit{\small{#3}} & \textit{\small{#4}} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeItemHeader}[1]{
-    \resumeItem{#1}\vspace{-5pt}
+    \item{\small{#1}}\vspace{-5pt}
 }
 
 \newcommand{\resumeItemFooter}[1]{
@@ -208,33 +206,33 @@
 \resumeSubHeadingListStart
 
 \resumeMainHeading
-{ImgAlly}{Mar 2024 - May 2024}
+{\href{\imgAllyLink}{\color{blue}ImgAlly}}{Mar 2024 - May 2024}
+\resumeItemHeader{An AI-based image generation and editing tool. It uses an AI model's API by HuggingFace.}
 \resumeItemListStart
-\resumeItem{ImgAlly is an AI-based image generation and editing tool.}
-\resumeItem{It uses an AI model API by HuggingFace and features a user-friendly interface.}
-\resumeItemFooter{Front-End: React.js, Next.js, TypeScript, TailwindCSS}
-\resumeItemFooter{Back-End: Node.js, TypeScript, Serverless}
-\resumeItemFooter{AWS Services: S3, Lambda, API Gateway, Cognito, DynamoDB, CloudFront}
+\resumeItem{Developed the \href{\emailAutomationLink}{\color{blue}Email Automation} project, allowing automated campaigns using a no-code builder.}
+\resumeItem{Transformed data of over 1,000 users with zero downtime, ensuring a seamless transition.}
+\resumeItem{Optimized MySQL queries and introduced Composer, enhancing performance and maintability.}
+\resumeItemFooter{Skills: TypeScript, React.js, Next.js, TailwindCSS, Node.js, Serverless, AWS}
 \resumeItemListEnd
 
 \resumeMainHeading
-{AutomateMyApp}{Jan 2021 - Sep 2021}
+{\href{\automateMyAppLink}{\color{blue}AutomateMyApp}}{Jan 2021 - Sep 2021}
+\resumeItemHeader{A workflow automation service, enabling users to connect apps and transfer data between them.}
 \resumeItemListStart
-\resumeItem{An automation service to connect apps and create workflows using a drag-and-drop interface.}
-\resumeItem{It supports many popular services like Gmail, Google Sheets, Calendly, and Discord.}
-\resumeItemFooter{Front-End: Vue.js, Vite, TypeScript, Bootstrap}
-\resumeItemFooter{Back-End: Node.js, Nest.js, TypeScript, Jest, PostgreSQL, PM2}
-\resumeItemFooter{AWS Services: EC2, S3, SES, CloudFront, CodeDeploy, ACM}
+\resumeItem{Integrated 10+ popular apps like Gmail, Google Sheets, and Discord using OAuth and Webhooks.}
+\resumeItem{Enabled subscription payments with PayPal, used JWT and Google OAuth for authentication.}
+\resumeItem{Implemented automated E2E testing, configured emails using SES, and deployed the application on AWS.}
+\resumeItemFooter{Skills: TypeScript, Vue.js, Vite, Bootstrap, Node.js, Nest.js, PostgreSQL, AWS}
 \resumeItemListEnd
 
 \resumeMainHeading
-{Clearalist}{Jan 2020 - Dec 2020}
+{\href{\clearalistLink}{\color{blue}Clearalist}}{Jan 2020 - Dec 2020}
+\resumeItemHeader{A Bulk Email List Verification service. It uses Telnet and SMTP protocol to verify thousands of emails.}
 \resumeItemListStart
-\resumeItem{An Email List cleaning service that allows users to upload emails in CSV files and verify them.}
-\resumeItem{It uses Telnet and SMTP protocols to verify emails and has a 90\% accuracy rate.}
-\resumeItemFooter{Front-End: Vue.js, JavaScript, Bootstrap}
-\resumeItemFooter{Back-End: Node.js, Express.js, JavaScript, Mocha, Chai, Supertest, MongoDB, PM2}
-\resumeItemFooter{AWS Services: EC2, S3, SES, SQS, CloudFront, CodeDeploy, ACM}
+\resumeItem{Implemented a queue-based job processing system with AWS SQS, ensuring reliability and accuracy.}
+\resumeItem{Integrated PayPal for one-time payments, and developed an affiliate system to boost sales.}
+\resumeItem{Set up automated E2E testing, configured Nginx as reverse proxy, and deployed the application on AWS.}
+\resumeItemFooter{Skills: JavaScript, Vue.js, Bootstrap, Node.js, Express.js, MongoDB, AWS}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
