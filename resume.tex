@@ -81,8 +81,8 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\iconLink}[1]{
-    \small\href{#1}{\color{blue}\faExternalLink}
+\newcommand{\resumeItemHeader}[1]{
+    \resumeItem{#1}\vspace{-5pt}
 }
 
 \newcommand{\resumeItemFooter}[1]{
@@ -165,10 +165,10 @@
 \section{Work Experience}
 \vspace{3pt}
 \resumeSubHeadingListStart
-
 \resumeSubheading
 {Front-End Developer}{Jul 2022 - Sep 2023}
 {\href{\adsumLink}{\color{blue}Adsum}}{London, UK (Remote)}
+\resumeItemHeader{It's a Fintech company offering instant VAT refunds. I built and maintained their entire front-end application.}
 \resumeItemListStart
 \resumeItem{Developed a custom KYC flow using \href{\veriffLink}{\color{blue}Veriff}, automating user verification and reducing manual efforts.}
 \resumeItem{Built the entire front-end application and a chat interface for the \href{\taxaiLink}{\color{blue}Tax AI} bot, 2 months ahead of deadline.}
@@ -179,6 +179,7 @@
 \resumeSubheading
 {Front-End Developer}{Dec 2021 - May 2022}
 {\href{\skootLink}{\color{blue}SKOOT}}{London, UK (Remote)}
+\resumeItemHeader{It's a Greentech company offering carbon-offsetting services. I developed the UI components and web pages.}
 \resumeItemListStart
 \resumeItem{Developed a UI component library with over 50 reusable components, enhancing modularity.}
 \resumeItem{Created responsive, accessible web pages using \href{\microFrontendLink}{\color{blue}Micro-Frontend Architecture}, enhancing experience.}
@@ -189,11 +190,12 @@
 \resumeSubheading
 {Web Developer}{Jan 2019 - Dec 2019}
 {\href{\pabblyLink}{\color{blue}Pabbly}}{\myHometown\ (On-site)}
+\resumeItemHeader{It's an Email Marketing SaaS company. I developed and maintained the email automation project.}
 \resumeItemListStart
 \resumeItem{Developed the \href{\emailAutomationLink}{\color{blue}Email Automation} project, allowing automated campaigns using a no-code builder.}
 \resumeItem{Transformed data of over 1,000 users with zero downtime, ensuring a seamless transition.}
 \resumeItem{Optimized MySQL queries and introduced Composer, enhancing performance and maintability.}
-\resumeItemFooter{Skills: PHP, CodeIgniter, HTML, CSS, JavaScript, MySQL}
+\resumeItemFooter{Skills: PHP, CodeIgniter, HTML, CSS, JavaScript, Bootstrap, MySQL}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
