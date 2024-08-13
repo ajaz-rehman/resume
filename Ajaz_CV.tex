@@ -12,7 +12,6 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{hyphenat}
-\usepackage{fontawesome}
 \input{glyphtounicode}
 
 
@@ -106,26 +105,8 @@
 
 %---------- LINKS ----------
 
-\def\myLinkedIn{https://linkedin.com/in/ajaz-ur-rehman}
-\def\myGitHub{https://github.com/ajaz-ur-rehman}
 \def\myPortfolio{https://ajaz-ur-rehman.github.io}
-\def\myHometownLocation{https://google.com/maps/place/Bhopal}
-
-\def\adsumLink{https://adsum-works.com}
-\def\skootLink{https://skoot.eco}
-\def\automateMyAppLink{https://automatemyapp.com}
-\def\clearalistLink{https://clearalist.com}
-\def\pabblyLink{https://pabbly.com/email-marketing}
-
-\def\veriffLink{https://veriff.com}
-\def\atomicDesignLink{https://bradfrost.com/blog/post/atomic-web-design}
-\def\taxaiLink{https://chat.taxai.uk}
-\def\microFrontendLink{https://micro-frontends.org}
-\def\emailAutomationLink{https://youtube.com/watch?v=kkopsVYOO7Y}
-
-\def\imgAllyLink{https://imgally.com}
-
-\def\rgpvLink{https://rgpv.ac.in}
+\def\imgAllyLink{https://app.imgally.com}
 
 %---------- DOCUMENT ----------
 
@@ -136,15 +117,13 @@
 \begin{center}
     \textbf{\Huge \scshape \myName} \\ \vspace{3pt}
     \small
-    \faLinkedinSquare \hspace{.5pt} \href{\myLinkedIn}{LinkedIn}
+    \href{mailto:\myEmail}{ajazurrehman4@gmail.com}
     $|$
-    \faGithub \hspace{.5pt} \href{\myGitHub}{GitHub}
+    \href{\myPortfolio}{\myPortfolio}
     $|$
-    \faGlobe \hspace{.5pt} \href{\myPortfolio}{Portfolio}
+    \href{tel:+917470611970}{+917470611970}
     $|$
-    \faAt \hspace{.5pt} \href{mailto:\myEmail}{Email}
-    $|$
-    \faMapMarker \hspace{.5pt} \href{\myHometownLocation}{\myHometown}
+    \myHometown\
 \end{center}
 
 %----------- Professional Summary -----------
@@ -153,7 +132,69 @@
 \vspace{3pt}
 \resumeSubHeadingListStart
 
-\resumeItem{My passion for programming began in high school when I first tinkered with a Java mobile game on my Nokia 2626. This early experience ignited my love for creating games and software, which led me to pursue a bachelor's degree in Computer Science and Engineering.\\ \vspace{3pt}With over 5 years of experience, I've developed into a Full-Stack Developer dedicated to building innovative SaaS products and tackling greenfield projects. I thrive on solving complex problems with technology, whether crafting sleek front-end interfaces or architecting scalable back-end systems.}
+\resumeItem{Full-stack developer with over 5 years of experience building innovative SaaS products and tackling greenfield projects. I'm passionate about solving complex problems with technology, from designing sleek front-end interfaces to architecting scalable back-end systems.}
+
+\resumeSubHeadingListEnd
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+\vspace{3pt}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Front-End Developer (Remote)}{Jul 2022 - Sep 2023}
+{Adsum}{London, UK}
+\resumeItemListStart
+\resumeItem{Developed a custom KYC flow using Veriff, automating user verification and eliminating manual work.}
+\resumeItem{Created a UI component library with over 100 components, based on Atomic Design principles.}
+\resumeItem{Developed the entire frontend application using Next.js, finishing 2 months ahead of the deadline.}
+\resumeItem{Built a ChatGPT-like chat interface for the Tax AI support bot, reducing user queries significantly.}
+\resumeItemFooter{Skills: TypeScript, React.js, Next.js, Python, Flask, Material UI}
+\resumeItemListEnd
+
+\resumeSubheading
+{Front-End Developer (Remote)}{Dec 2021 - May 2022}
+{SKOOT}{London, UK}
+\resumeItemListStart
+\resumeItem{Developed a central UI component library with over 50 reusable components, enhancing modularity.}
+\resumeItem{Created responsive, and accessible web pages based on a Micro-Frontend Architecture.}
+\resumeItem{Delivered the product 1 month before schedule by meeting milestones and completing tasks early.}
+\resumeItem{Published all components on Storybook, allowing smoother collaboration with UI/UX designer.}
+\resumeItemFooter{Skills: TypeScript, Vue.js, Nuxt.js, GraphQL, Storybook, TailwindCSS}
+\resumeItemListEnd
+
+\resumeSubheading
+{Founder, and Full-Stack Developer}{Jan 2021 - Sep 2021}
+{AutomateMyApp}{\myHometown}
+\resumeItemListStart
+\resumeItem{Designed and developed a Workflow Automation service like Zapier that supports 10+ popular apps.}
+\resumeItem{Built an easy-to-use no-code workflow builder, enabling users to create automation without coding.}
+\resumeItem{Integrated apps, including Gmail, Google Sheets, Calendly, and Discord, using OAuth and Webhooks.}
+\resumeItem{Enabled subscription payments with PayPal and used JWT and Google OAuth for authentication.}
+\resumeItemFooter{Skills: TypeScript, Vue.js, Vite, Node.js, Nest.js, PostgreSQL, AWS}
+\resumeItemListEnd
+
+\resumeSubheading
+{Founder, and Full-Stack Developer}{Jan 2020 - Dec 2020}
+{Clearalist}{\myHometown}
+\resumeItemListStart
+\resumeItem{Designed and developed an Email Verification service that has served over 1000 users so far.}
+\resumeItem{Implemented a queue-based job processing system using SQS, improving reliability, and accuracy.}
+\resumeItem{Added custom JWT token-based authentication mechanism, ensuring secure access to the API.}
+\resumeItem{Integrated PayPal for one-time payments and developed an affiliate system, boosting sales by 20\%.}
+\resumeItemFooter{Skills: JavaScript, Express.js, Vue.js, Node.js, MongoDB, AWS}
+\resumeItemListEnd
+
+\resumeSubheading
+{Web Developer}{Jan 2019 - Dec 2019}
+{Pabbly}{\myHometown}
+\resumeItemListStart
+\resumeItem{Developed the Email Automation project with a no-code builder, handling 2000 automation/minute.}
+\resumeItem{Migrated data of over 1,000 users in MySQL with zero downtime, ensuring a seamless transition.}
+\resumeItem{Optimized MySQL queries and API calls, reducing data fetching time from 10 seconds to 1 second.}
+\resumeItem{Replaced manual dependencies by introducing Composer, centralizing dependency management.}
+\resumeItemFooter{Skills: PHP, CodeIgniter, JavaScript, MySQL, HTML, CSS, Bootstrap}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -164,7 +205,7 @@
 \resumeSubHeadingListStart
 \small{\item{
 
-                \textbf{Languages:}{ JavaScript, TypeScript, Python} \\ \vspace{3pt}
+                \textbf{Languages:}{ JavaScript, TypeScript, PHP, Python} \\ \vspace{3pt}
 
                 \textbf{Front-End:}{ React.js, Vue.js, Next.js, Nuxt.js, Vite} \\ \vspace{3pt}
 
@@ -175,73 +216,6 @@
           }}
 \resumeSubHeadingListEnd
 
-%----------- WORK EXPERIENCE -----------
-
-\section{Work Experience}
-\vspace{3pt}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Front-End Developer}{Jul 2022 - Sep 2023}
-{\href{\adsumLink}{\color{blue}Adsum}}{London, UK (Remote)}
-\resumeItemListStart
-\resumeItem{Developed a custom KYC flow using \href{\veriffLink}{\color{blue}Veriff}, automating user verification and eliminating manual work.}
-\resumeItem{Created a UI component library with over 100 components, based on \href{\atomicDesignLink}{\color{blue}Atomic Design} principles.}
-\resumeItem{Developed the entire frontend application using Next, finishing 2 months ahead of the deadline.}
-\resumeItem{Built a ChatGPT-like chat interface for the \href{\taxaiLink}{\color{blue}Tax AI} support bot, reducing user queries significantly.}
-\resumeItem{Established an effective communication channel with the team, improving development speed.}
-\resumeItemFooter{Skills: TypeScript, React.js, Next.js, Python, Flask, Material UI}
-\resumeItemListEnd
-
-\resumeSubheading
-{Front-End Developer}{Dec 2021 - May 2022}
-{\href{\skootLink}{\color{blue}SKOOT}}{London, UK (Remote)}
-\resumeItemListStart
-\resumeItem{Developed a central UI component library with over 50 reusable components, enhancing modularity.}
-\resumeItem{Created responsive, and accessible web pages based on a \href{\microFrontendLink}{\color{blue}Micro-Frontend Architecture}.}
-\resumeItem{Delivered the product 1 month before schedule by meeting milestones and completing tasks early.}
-\resumeItem{Published all components on Storybook, allowing smoother collaboration with UI/UX designer.}
-\resumeItem{Reviewed the code of fellow developers on my team, helping each other write high-quality code.}
-\resumeItemFooter{Skills: TypeScript, Vue.js, Nuxt.js, GraphQL, Storybook, TailwindCSS}
-\resumeItemListEnd
-
-\resumeSubheading
-{Founder, and Full-Stack Developer}{Jan 2021 - Sep 2021}
-{\href{\automateMyAppLink}{\color{blue}AutomateMyApp}}{\myHometown\ (On-site)}
-\resumeItemListStart
-\resumeItem{Designed and developed a Workflow Automation service like Zapier that supports 10+ popular apps.}
-\resumeItem{Built an easy-to-use no-code workflow builder, enabling users to create automation without coding.}
-\resumeItem{Integrated apps, including Gmail, Google Sheets, Calendly, and Discord, using OAuth and Webhooks.}
-\resumeItem{Enabled subscription payments with PayPal and used JWT and Google OAuth for authentication.}
-\resumeItem{Implemented automated end-to-end testing, configured emails with SES, and deployed on AWS.}
-\resumeItemFooter{Skills: TypeScript, Vue.js, Vite, Node.js, Nest.js, PostgreSQL, AWS}
-\resumeItemListEnd
-
-\resumeSubheading
-{Founder, and Full-Stack Developer}{Jan 2020 - Dec 2020}
-{\href{\clearalistLink}{\color{blue}Clearalist}}{\myHometown\ (On-site)}
-\resumeItemListStart
-\resumeItem{Designed and developed an Email Verification service that has served over 1000 users so far.}
-\resumeItem{Implemented a queue-based job processing system using SQS, improving reliability, and accuracy.}
-\resumeItem{Added custom JWT token-based authentication mechanism, ensuring secure access to the API.}
-\resumeItem{Integrated PayPal for one-time payments and developed an affiliate system, boosting sales by 20\%.}
-\resumeItem{Set up automated end-to-end testing, configured Nginx as a reverse proxy, and deployed on AWS.}
-\resumeItemFooter{Skills: JavaScript, Express.js, Vue.js, Node.js, MongoDB, AWS}
-\resumeItemListEnd
-
-\resumeSubheading
-{Web Developer}{Jan 2019 - Dec 2019}
-{\href{\pabblyLink}{\color{blue}Pabbly}}{\myHometown\ (On-site)}
-\resumeItemListStart
-\resumeItem{Developed the \href{\emailAutomationLink}{\color{blue}Email Automation} project with a no-code builder, handling 2000 automation/minute.}
-\resumeItem{Migrated data of over 1,000 users in MySQL with zero downtime, ensuring a seamless transition.}
-\resumeItem{Optimized MySQL queries and API calls, reducing data fetching time from 10 seconds to 1 second.}
-\resumeItem{Replaced manual dependencies by introducing Composer, centralizing dependency management.}
-\resumeItem{Communicated with dozens of users with complaints, and fixed hundreds of issues they were facing.}
-\resumeItemFooter{Skills: PHP, CodeIgniter, JavaScript, MySQL, HTML, CSS, Bootstrap}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
 %----------- EDUCATION -----------
 
 \section{Education}
@@ -250,7 +224,7 @@
 
 \resumeSubheading
 {Bachelor of Engineering (Computer Science)}{Jul 2013 - Jun 2017}
-{\href{\rgpvLink}{\color{blue}Rajiv Gandhi Proudyogiki Vishwavidyalaya}}{\myHometown}
+{Rajiv Gandhi Proudyogiki Vishwavidyalaya}{\myHometown}
 
 \resumeSubHeadingListEnd
 
@@ -261,7 +235,7 @@
 \resumeSubHeadingListStart
 
 \resumeMainHeading
-{\href{\imgAllyLink}{\color{blue}ImgAlly}}{Mar 2024 - May 2024}
+{ImgAlly -- \href{\imgAllyLink}{\imgAllyLink}}{Mar 2024 - May 2024}
 \resumeItemHeader{An AI-based image generation and editing tool utilizing an AI model API from HuggingFace.}
 \resumeItemListStart
 \resumeItem{Developed the backend with the Serverless framework and AWS Lambda, enabling cost-effective scaling.}
