@@ -1,0 +1,267 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{4.35004pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}\vspace{-2pt}
+}
+
+\newcommand{\resumeMainHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small{#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small{#2} \\
+      \textit{\small{#3}} & \textit{\small{#4}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemHeader}[1]{
+    \item{\small{#1}}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemFooter}[1]{
+    \\ \vspace{7pt}\hspace{-0.35in}\footnotesize\emph{#1}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---------- CONSTANTS ----------
+
+\def\myName{Ajaz Ur Rehman}
+\def\myTitle{Software Engineer}
+\def\myHometown{Bhopal, India}
+\def\myEmail{ajazurrehman4@gmail.com}
+
+%---------- LINKS ----------
+
+\def\myPortfolio{https://ajaz-ur-rehman.github.io}
+\def\imgAllyLink{https://app.imgally.com}
+
+%---------- DOCUMENT ----------
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape \myName} \\ \vspace{3pt}
+    \small
+    \href{mailto:\myEmail}{ajazurrehman4@gmail.com}
+    $|$
+    \href{\myPortfolio}{\myPortfolio}
+    $|$
+    \href{tel:+917470611970}{+917470611970}
+    $|$
+    \myHometown\
+\end{center}
+
+%----------- Professional Summary -----------
+
+\section{Professional Summary}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeItem{Full-stack developer with over 5 years of experience building innovative SaaS products and tackling greenfield projects. I'm passionate about solving complex problems with technology, from designing sleek front-end interfaces to architecting scalable back-end systems.}
+
+\resumeSubHeadingListEnd
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+\vspace{3pt}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Front-End Developer (Remote)}{Jul 2022 - Sep 2023}
+{Adsum-Works}{London, UK}
+\resumeItemListStart
+\resumeItem{Developed a custom KYC flow using Veriff, automating user verification and eliminating manual work.}
+\resumeItem{Created a UI component library with over 100 components, based on Atomic Design principles.}
+\resumeItem{Developed the entire frontend application using Next.js, finishing 2 months ahead of the deadline.}
+\resumeItem{Built a ChatGPT-like chat interface for the Tax AI support bot, reducing user queries significantly.}
+\resumeItemFooter{Skills: TypeScript, React.js, Next.js, Python, Flask, Material UI}
+\resumeItemListEnd
+
+\resumeSubheading
+{Front-End Developer (Remote)}{Dec 2021 - May 2022}
+{SkootEco}{London, UK}
+\resumeItemListStart
+\resumeItem{Developed a central UI component library with over 50 reusable components, enhancing modularity.}
+\resumeItem{Created responsive, and accessible web pages based on a Micro-Frontend Architecture.}
+\resumeItem{Delivered the product 1 month before schedule by meeting milestones and completing tasks early.}
+\resumeItem{Published all components on Storybook, allowing smoother collaboration with UI/UX designer.}
+\resumeItemFooter{Skills: TypeScript, Vue.js, Nuxt.js, GraphQL, Storybook, TailwindCSS}
+\resumeItemListEnd
+
+\resumeSubheading
+{Founder, and Full-Stack Developer}{Jan 2021 - Sep 2021}
+{AutomateMyApp}{\myHometown}
+\resumeItemListStart
+\resumeItem{Designed and developed a Workflow Automation service like Zapier that supports 10+ popular apps.}
+\resumeItem{Built an easy-to-use no-code workflow builder, enabling users to create automation without coding.}
+\resumeItem{Integrated apps, including Gmail, Google Sheets, Calendly, and Discord, using OAuth and Webhooks.}
+\resumeItem{Enabled subscription payments with PayPal and used JWT and Google OAuth for authentication.}
+\resumeItemFooter{Skills: TypeScript, Vue.js, Vite, Node.js, Nest.js, PostgreSQL, AWS}
+\resumeItemListEnd
+
+\resumeSubheading
+{Founder, and Full-Stack Developer}{Jan 2020 - Dec 2020}
+{Clearalist}{\myHometown}
+\resumeItemListStart
+\resumeItem{Designed and developed an Email Verification service that has served over 1000 users so far.}
+\resumeItem{Implemented a queue-based job processing system using SQS, improving reliability, and accuracy.}
+\resumeItem{Added custom JWT token-based authentication mechanism, ensuring secure access to the API.}
+\resumeItem{Integrated PayPal for one-time payments and developed an affiliate system, boosting sales by 20\%.}
+\resumeItemFooter{Skills: JavaScript, Express.js, Vue.js, Node.js, MongoDB, AWS}
+\resumeItemListEnd
+
+\resumeSubheading
+{Web Developer}{Jan 2019 - Dec 2019}
+{Pabbly}{\myHometown}
+\resumeItemListStart
+\resumeItem{Developed the Email Automation project with a no-code builder, handling 2000 automation/minute.}
+\resumeItem{Migrated data of over 1,000 users in MySQL with zero downtime, ensuring a seamless transition.}
+\resumeItem{Optimized MySQL queries and API calls, reducing data fetching time from 10 seconds to 1 second.}
+\resumeItem{Replaced manual dependencies by introducing Composer, centralizing dependency management.}
+\resumeItemFooter{Skills: PHP, CodeIgniter, JavaScript, MySQL, HTML, CSS, Bootstrap}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+\vspace{2pt}
+\resumeSubHeadingListStart
+\small{\item{
+
+                \textbf{Languages:}{ JavaScript, TypeScript, PHP, Python} \\ \vspace{3pt}
+
+                \textbf{Front-End:}{ React.js, Vue.js, Next.js, Nuxt.js, Vite} \\ \vspace{3pt}
+
+                \textbf{Back-End:}{ Node.js, Express.js, Nest.js, Serverless, AWS} \\ \vspace{3pt}
+
+                \textbf{Databases:}{ MySQL, PostgreSQL, MongoDB} \\ \vspace{3pt}
+
+          }}
+\resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+
+\section{Education}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Bachelor of Engineering (Computer Science)}{Jul 2013 - Jun 2017}
+{Rajiv Gandhi Proudyogiki Vishwavidyalaya}{\myHometown}
+
+\resumeSubHeadingListEnd
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeMainHeading
+{ImgAlly -- \href{\imgAllyLink}{\imgAllyLink}}{Mar 2024 - May 2024}
+\resumeItemHeader{An AI-based image generation and editing tool utilizing an AI model API from HuggingFace.}
+\resumeItemListStart
+\resumeItem{Developed the backend with the Serverless framework and AWS Lambda, enabling cost-effective scaling.}
+\resumeItem{Implemented authentication with AWS Cognito, ensuring secure access to the application.}
+\resumeItem{Used AWS DynamoDB for user data storage and deployed the frontend with AWS S3 and CloudFront.}
+\resumeItemFooter{Skills: TypeScript, React.js, Next.js, TailwindCSS, Node.js, Serverless, AWS}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- CERTIFICATES -----------
+
+% \section{Certificates}
+% \resumeSubHeadingListStart
+
+% \resumeSubheading
+% {Enterprise Application Development for Cloud Deployment}{Oct 2016 - Oct 2016}
+% {\href{\ibmTrainingLink}{\color{blue}IBM}}{\myHometown}
+% \resumeSubHeadingListEnd
+
+%----------- HOBBIES -----------
+
+\section{Hobbies}
+\resumeSubHeadingListStart
+\small{\item{Video Games, 3D Modeling, Hiking, Competitive Programming }}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
