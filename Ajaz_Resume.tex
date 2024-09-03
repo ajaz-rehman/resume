@@ -63,6 +63,15 @@
   \item\small{#1}\vspace{-2pt}
 }
 
+\newcommand{\resumeSimpleTable}[6]{
+  \vspace{-2pt}
+    \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small{#1} & \small{#2} \\
+      \small{#3} & \small{#4} \\
+      \small{#5} & \small{#6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -98,6 +107,9 @@
 
 %---------- LINKS ----------
 
+\def\myHometownLink{https://google.com/maps/place/Bhopal}
+\def\myLinkedInLink{https://linkedin.com/in/ajaz-ur-rehman}
+\def\myGitHubLink{https://github.com/ajaz-ur-rehman}
 \def\myPortfolioLink{https://ajaz-ur-rehman.github.io}
 
 \def\adsumLink{https://adsum-works.com}
@@ -119,14 +131,13 @@
 
 \begin{center}
     \textbf{\Huge \scshape \myName} \\ \vspace{3pt}
-    \small
-    \href{mailto:\myEmail}{ajazurrehman4@gmail.com}
-    $|$
-    \href{\myPortfolioLink}{ajaz-ur-rehman.github.io}
-    $|$
-    \href{tel:\myPhone}{\myPhone}
-    $|$
-    \myHometown\
+    \resumeSimpleTable
+    {\href{\myPortfolioLink}{\color{blue}ajaz-ur-rehman.github.io}}
+    {\href{\myHometownLink}{\color{blue}\myHometown}}
+    {\href{\myGitHubLink}{\color{blue}github.com/ajaz-ur-rehman}}
+    {\href{tel:\myPhone}{\color{blue}\myPhone}}
+    {\href{\myLinkedInLink}{\color{blue}linkedin.com/in/ajaz-ur-rehman}}
+    {\href{mailto:\myEmail}{\color{blue}\myEmail}}
 \end{center}
 
 %----------- PROFESSIONAL SUMMARY -----------
